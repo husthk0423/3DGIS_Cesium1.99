@@ -1,0 +1,135 @@
+version=1.0.1    2020/1/5
+@ 解决无法编译release版本问题。
+@ 解决道路注记间距始终相等的问题。
+
+version=1.0.2    2020/1/8
+# 白膜房屋增加高程管理。
+
+version=1.0.3    2020/4/12
+# 支持加载wkt。
+
+version=1.1.3    2021/10/14
+# 增加i3s图层支持。
+# 增加设置显示不同图层层级
+# 优化地图倾斜时的瓦片请求数量
+# 增加RGB地形格式图层
+
+
+version=2.0.1    2022/1/10
+# cesium 升级到1.88版本。
+# 解决矢量底图前端绘制接入3.0渲染引擎不显示的bug。
+# 增加wkt，geojson等格式解析绘制
+
+version=2.0.2    2022/1/13
+@ 解决相机浏览没有地形的倾斜数据时，地图乱跳的bug
+
+
+version=2.1.0    2022/5/13
+# cesium升级到1.91版本
+# CesiumTerrainProvider地形类增加subdomains属性，支持从多个域获取地形数据，提升并发请求性能
+# Cesium3DTileset增加subdomains属性，支持从多个域获取地形数据，提升并发请求性能
+# 增加EnvelopeModelTileServiceImageryProvider类，支持矢量图层数据蒙到模型上，查看效果
+# 增加ImageTileProvider类，支持用指定图片作为贴图，贴到球上
+# 地形增加支持是否使用512地形瓦片贴图参数
+# 地形增加是否需求请求第0级地形瓦片参数
+# 添加流动的动态水材质
+# 添加动态线材质
+
+version=2.1.1    2022/5/25
+# 增加通视分析
+# 增加可视域分析
+# 增加剖面分析
+# 增加贴地量距离
+# 添加贴地量面积
+
+version=2.1.2    2022/5/31
+# 增加下雨效果，并可以支持下雨大小的控制
+# 增加下雪效果，并可以支持下雪大小的控制
+@ 解决可视域容易导致内存溢出的bug
+
+
+version=2.1.3 base cesium1.91    2022/6/21
+# 增加等高线分析
+# 增加坡度坡向分析
+# 增加toolTip接口
+
+version=2.1.4 base cesium1.91    2022/7/7
+@ 解决3dtiles压缩格式内存不释放的bug
+@ 解决3dtiles在高层级旋转地图时，出现低层级瓦片的bug
+
+
+version=3.0.0 base cesium1.95    2022/7/19
+# 增加水面旋涡效果，增加透明度参数
+# 增加体积测量接口
+# 增加雨、雪大小控制效果的默认值
+
+
+version=3.0.1 base cesium1.95    2022/7/27
+# 3dtiles增加indexdb缓存
+@ 解决3dtiles图层蒙上矢量图层无效的bug
+@ 解决非压缩模型裁剪不全的bug
+# 增加闪电效果
+# 使用新的雨效果
+@ 流动水面材质去掉旋涡和噪点
+# 增加旋涡水面材质
+# 增加涟漪水面材质
+@ 解决跑马灯无效果的bug
+@ 地形挖洞最低高度优化
+
+
+
+version=3.0.2 base cesium1.95    2022/8/25
+@ 解决前端矢量绘制图层，在加载多面时，漏掉多面的bug
+
+
+version=3.0.3 base cesium1.95    2022/9/15
+# 增加指定地面抬升功能
+@ 3dtiles的indexdb缓存移植到子线程中，提升响应速度
+
+
+version=3.0.4 base cesium1.95    2022/9/17
+# 增加视频投影接口Custom.Video
+@ 解决种树模型接口只能有一种类型的bug
+
+version=3.0.5 base cesium1.95    2022/9/22
+@ 解决投影视频在俯角90度时，无法旋转视频投影的bug
+
+version=3.1.0 base cesium1.97    2022/9/27
+@ Cesium升级到1.97版本
+
+version=3.1.1 base cesium1.97    2022/10/14
+@ 解决3dtile图层开启了indexdb，然后清理缓存后，不刷新页面，继续浏览地图报错的bug。
+@ 解决挖洞抬升接口设置透明度效果不对的bug。
+
+version=3.1.1 base cesium1.97    2022/11/2
+@ cesium的扩展类采用cesium的方式编译。
+
+version=3.1.2 base cesium1.97    2022/11/3
+@ 解决注记不能去重的bug。
+
+version=3.1.3 base cesium1.99    2022/11/21
+@ cesium 升级到1.99版本。
+@ golbe增加地表是否支持透明参数transparent
+
+version=3.1.4 base cesium1.99    2022/12/9
+@ 解决在3dtiles图层在设置subdomain时，导致indexdb失效的bug。
+# 增加影像图层组接口。
+
+version=3.1.5 base cesium1.99    2022/12/12
+# 3dtiles图层增加设置子线程数量接口。
+
+version=3.1.6 base cesium1.99    2022/12/26
+# 前端注记图层接口支持过滤接口。
+# 支持简单光照
+
+
+version=3.1.7 base cesium1.97    2022/11/3
+@ 解决影像图层增加ratio=2时，显示错位，模糊不正常的bug。
+
+
+
+version=3.1.8 base cesium1.97    2023/3/16
+@ 前端注记图层支持获取时，取到label的gid和layerId。
+
+
+

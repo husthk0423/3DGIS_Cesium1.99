@@ -1,0 +1,3 @@
+
+
+const gzip = zlib.createGzip();
