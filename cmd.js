@@ -24,9 +24,18 @@ export default function(cmd,path){
 
 
     try{
+          //win11 环境下加shell:true才能正常执行
+          compressProcess = childProcess.spawn(cmdName, cmdParam, {
+            cwd: path,
+            shell: true
+        });
+
+        //其他环境下的执行方式
+        /*
         compressProcess = childProcess.spawn(cmdName, cmdParam, {
             cwd: path
         });
+        */
         compressProcess.stdout.on('data', (data) => {
             console.log(`stdout: ${data}`);
           });
