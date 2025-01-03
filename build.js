@@ -257,6 +257,7 @@ let go = async function (cmd, buildCopyTo) {
     //     await buildCustomCesium('buildDevCustom');
     // }
 }
-
-go("build");
-// go("release");
+//正常压缩可调试模式
+// go("build");
+//加密模式
+go("release");
