@@ -575,12 +575,12 @@ ModelSceneGraph.prototype.buildDrawCommands = function (frameState) {
     new Cartesian3()
   );
 
-  let testmodel=model._testboundingVolume._orientedBoundingBox;
+  // let testmodel=model._testboundingVolume._orientedBoundingBox;
   // let testcenter=testmodel.center;
 
 
-  let testCenterPoints=Cesium.OrientedBoundingBox.computeCorners(testmodel);
-  let minheight=Cesium.Cartographic.fromCartesian(testCenterPoints[0]).height;
+  // let testCenterPoints=Cesium.OrientedBoundingBox.computeCorners(testmodel);
+  // let minheight=Cesium.Cartographic.fromCartesian(testCenterPoints[0]).height;
 
 
 
@@ -595,14 +595,14 @@ ModelSceneGraph.prototype.buildDrawCommands = function (frameState) {
   // let testCenterPoints=testmodel.computeCorners();
 
   
-  let cartographicmax = Cesium.Cartographic.fromCartesian(sphereMODEEmax);
-  console.log('*****************************************************************'+modelPositionMax.y);
-  console.log('######################################################'+modelPositionMin.y);
+  // let cartographicmax = Cesium.Cartographic.fromCartesian(sphereMODEEmax);
+  // console.log('*****************************************************************'+modelPositionMax.y);
+  // console.log('######################################################'+modelPositionMin.y);
       const drawCommand = buildDrawCommand(
         primitiveRenderResources,
         frameState,
         // cartographic.height
-        (modelPositionMax.y- modelPositionMin.y)*0.5+minheight
+        (modelPositionMax.y- modelPositionMin.y)*0.5
         // (cartographicmax.height-cartographic.height)*0.5
         //modelPositionMin.z
         // cartographic.height
